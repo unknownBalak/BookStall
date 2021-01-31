@@ -1,0 +1,22 @@
+.columnChild {
+  align-items: center;
+  justify-content: space-around;
+  display: flex;
+  box-shadow: 1px 1px 5px 3px grey;
+  padding: 5px;
+  margin-top: 5px;
+  transition: 1s;
+}
+.column_price {
+  font-size: 9px;
+}
+.columnChild > .img > img {
+  width: 55px;
+}
+.column__ratingStar {
+  color: orangered;
+  font-size: 20px;
+}
+.columnChild:hover {
+  transform: scale(1.1);
+}

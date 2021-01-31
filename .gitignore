@@ -5,6 +5,7 @@
 /.pnp
 .pnp.js
 
+/state&components
 # testing
 /coverage
 

@@ -1,23 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import Navingation from "./compponents/nav.jsx";
+import Home from "./compponents/Home.jsx";
+import FetchAPI from "./compponents/FetchAPI";
+// const { item } = fetchAPI;
+import { useState } from "react";
 function App() {
+  const [data, isData] = useState("");
+  // console.log(item);
+  let { fetchAPI } = FetchAPI;
+  console.log(fetchAPI);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* //Navigation Bar 
+                Search 
+                Cart option will be there
+      */}
+      {/* <FetchAPI /> */}
+      <Navingation />
+      {/* Home page which will contain
+          Cards(Books details) 
+          It will 3/4 of total screen while in laptop mode
+      */}
+      <Home />
+      {/* {console.log(data)} */}
+      {/* <fetchAPI /> */}
+      {/*
+          and 1/4 will be for a column which will contain sorted
+           book details according to their rating.
+            highest rating will be on top.      
+       */}
     </div>
   );
 }

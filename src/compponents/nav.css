@@ -1,0 +1,33 @@
+.nav {
+  background-color: grey;
+  padding: 10px;
+  align-items: center;
+}
+.nav__component {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+  margin: auto;
+  align-items: center;
+}
+.nav__component > li > input {
+  padding: 5px;
+  border-radius: 10px;
+  border: none;
+}
+.nav__component > li > .fa-search {
+  margin-left: 5px;
+  border-radius: 50%;
+  transition: ease-in-out 0.4s;
+}
+
+.nav__component > li > input:focus {
+  outline: none;
+}
+.nav__component > li:nth-child(2) {
+  font-size: 25px;
+}
+
+.nav__class {
+  box-shadow: 2px 1px 8px 5px #c2ccc2;
+}
